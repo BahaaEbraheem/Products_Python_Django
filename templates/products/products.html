@@ -2,12 +2,29 @@
 
 
 {% block content %}
-{% for product in pro %}
 
-<h1>{{ product.name }}</h1>
-<h1>{{ product.price }}</h1>
+<table>
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>price</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for product in pro %}
+        <tr>
+            <td>
+                {{ product.name }}
+            </td>
+            <td>
+                {{ product.price }}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
 
-{% endfor %}
+
 
 
 
