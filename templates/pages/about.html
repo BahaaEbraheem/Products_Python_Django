@@ -1,4 +1,20 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1>Hellow in About Page render</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{lf}}
+
+    <!-- <br>
+    <input name="username" placeholder="username" type="text">
+    <br>
+    <br>
+
+    <input name="password" placeholder="password" type="password">
+    <br>
+    <br> -->
+    <button type="submit">Save</button>
+</form>
+
 {% endblock content %}
